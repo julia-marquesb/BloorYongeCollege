@@ -1,0 +1,575 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('../images/background.png');
+  background-size: cover;
+  /*background-repeat: no-repeat;*/
+  opacity: 1.0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #21048b;
+  color: rgb(18, 9, 147);
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.ab {
+  margin: 80px 0px 0px 10px;
+}
+
+.product-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 30%;
+}
+
+.product-description {
+  width: 600px;
+  position: absolute;
+  right: 0;
+  margin-right: 60px;
+  top: 80px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #e1d8d8;
+  text-align: justify;
+}
+
+.product-description h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.product-description p {
+  margin: 10px 0;
+}
+
+.thumbnail {
+  display: inline-block;
+  margin: 10px;
+}
+
+.thumbnail img {
+  width: 150px;
+  height: auto;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reviews-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: rgba(7, 121, 173, 0.819);
+  text-decoration: underline;
+}
+
+.conta {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.feedback,
+.subscription {
+  padding: 20px;
+  border: 3px solid rgba(101, 95, 72, 0.911);
+  border-radius: 5px;
+  width: 400px;
+  max-width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #e1d8d8;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin: 5px 0;
+}
+
+form input,
+form textarea {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #555;
+}
+
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.username {
+  font-weight: bold;
+  color: #333;
+}
+
+.stars {
+  display: flex;
+}
+
+.star {
+  font-size: 1.5em;
+  color: #ffcc00;
+}
+
+.star.filled {
+  color: #ffcc00;
+}
+
+.star:not(.filled) {
+  color: #ccc;
+}
+
+.review p {
+  margin: 0;
+  color: #666;
+}
+
+/* Corporate Information Page Styles */
+.corporate-container {
+  margin: 80px auto 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.corporate-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  color: #333;
+}
+
+.corporate-container h2 {
+  margin-top: 20px;
+  font-size: 2em;
+  color: #8d1717;
+}
+
+.corporate-container p,
+.corporate-container ul {
+  margin: 10px 0;
+  color: #666;
+}
+
+.corporate-container ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.team-member {
+  margin: 20px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h3 {
+  margin-top: 10px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.team-member p {
+  color: #666;
+}
+
+/* Promotion Details Page Styles */
+.promotions-container {
+  margin: 80px auto 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.promotions-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  color: #333;
+}
+
+.promotion {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.promotion h2 {
+  font-size: 1.8em;
+  color: #8d1717;
+}
+
+.promotion p {
+  margin: 10px 0;
+  color: #666;
+}
+
+.promotion .expiration {
+  font-size: 0.9em;
+  color: #888;
+}
+
+.apply-promo {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #8d1717;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.apply-promo:hover {
+  background-color: #a71b1b;
+}
+
+/* About the Product Page Styles */
+.about-container {
+  margin: 80px auto 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  color: #333;
+}
+
+.about-container h2 {
+  margin-top: 20px;
+  font-size: 2em;
+  color: #8d1717;
+}
+
+.features ul,
+.specifications table {
+  margin: 10px 0;
+  color: #666;
+}
+
+.features ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.specifications table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.specifications th,
+.specifications td {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.specifications th {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.history p {
+  margin: 10px 0;
+  color: #666;
+}
+
+
+
+/*ABOUT PAGE STYLE*/
+.about-us-image{
+  background-image: url('../images/about-us-page.jpg');
+  background-size: cover;
+  background-position: 3% 50%;
+  height: 20vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.about-us-title{
+  width: 80vw;
+  color: white;
+  position: absolute;
+  justify-content: center;
+  pad: .7em 5em;
+  text-align: center;
+  vertical-align: middle;
+  bottom: 420px;
+}
+
+.about-us-title h1{
+  font-size: 4vw;
+  text-shadow: 1px 1px 1px #333;
+}
+
+#section-about{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #e1d8d8;
+  padding: 2em 2em;
+  width: 1000px;
+  margin: 80px auto 20px auto;
+  border-radius: 10px;
+
+}
+
+.about-us-content{
+  width: 40vw;
+  margin-right: 4vw;
+  line-height: 1.5; 
+  text-align: justify;
+  
+}
+
+
+.careers-about-link{
+  text-decoration: none;
+  color: #8d1717;
+}
+
+a.careers-about-link:hover{
+  text-decoration: underline;
+}
+
+.downtown-toronto{
+  text-decoration: none;
+  color: #8d1717;
+}
+
+a.downtown-toronto:hover{
+  text-decoration: underline;
+}
+ 
+.about-page-image{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-page-image img{
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about-page-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  position: relative;
+  margin: 80px auto 20px auto;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #e1d8d8;
+  
+}
+
+.box-history h2,
+.box-mission h2,
+.box-key-performance h2{
+  color: #8d1717;
+}
+
+.box-history{
+  left: 10px;
+  line-height: 1.5; 
+  text-align: justify;  
+   
+}
+
+.box-mission{
+  justify-self: stretch;
+  line-height: 1.5; 
+  text-align: justify;
+
+}
+
+.box-key-performance{
+  justify-self: stretch;
+  line-height: 1.5; 
+  text-align: justify;
+  right: 10px;
+}
+
+
+/*CAMPUS PAGE STYLE*/
+.support-container {
+  margin: 80px auto 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.support-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  color: #333;
+}
+
+.support-container h2 {
+  margin-top: 20px;
+  font-size: 2em;
+  color: #8d1717;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-item h3 {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.faq-item p {
+  margin: 10px 0;
+  color: #666;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  color: #666;
+}
+
+.contact-info strong {
+  color: #333;
+}
+
